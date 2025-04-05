@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentação Canina - Cuidados Pets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <h1>Cuidados Pets</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="racas.html">Raças</a></li>
+                    <li><a href="dicas.html">Dicas</a></li>
+                    <li><a href="alimentacao.html" class="active">Alimentação</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Alimentação Canina</h2>
+            <p>Calculadora e dicas para alimentação saudável</p>
+        </div>
+    </section>
+
+    <section class="food-converter">
+        <div class="container">
+            <div class="converter-container">
+                <h3>Conversor de Medidas</h3>
+                <form id="food-converter">
+                    <div class="form-group">
+                        <label for="quantity">Quantidade:</label>
+                        <input type="number" id="quantity" step="0.01" min="0.01" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="from-unit">De:</label>
+                        <select id="from-unit" required>
+                            <option value="xícara">Xícara</option>
+                            <option value="colher_sopa">Colher de Sopa</option>
+                            <option value="grama">Gramas</option>
+                            <option value="kg">Quilogramas</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="to-unit">Para:</label>
+                        <select id="to-unit" required>
+                            <option value="grama">Gramas</option>
+                            <option value="kg">Quilogramas</option>
+                            <option value="xícara">Xícara</option>
+                            <option value="colher_sopa">Colher de Sopa</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="food-type">Tipo de Alimento:</label>
+                        <select id="food-type" required>
+                            <option value="ração_seca">Ração Seca</option>
+                            <option value="ração_umida">Ração Úmida</option>
+                            <option value="carne">Carne</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn">Calcular</button>
+                </form>
+                
+                <div id="result" class="result-box"></div>
+            </div>
+            
+            <div class="feeding-tips">
+                <h3>Dicas de Alimentação</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Horários Regulares</h4>
+                        <p>Estabeleça horários fixos para as refeições, geralmente 2-3 vezes ao dia para adultos.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <i class="fas fa-utensils"></i>
+                        <h4>Quantidade Adequada</h4>
+                        <p>Siga as recomendações do fabricante da ração baseadas no peso e idade do seu cão.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <i class="fas fa-tint"></i>
+                        <h4>Água Fresca</h4>
+                        <p>Mantenha sempre água limpa e fresca disponível para seu cão.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Rodapé igual às outras páginas -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
